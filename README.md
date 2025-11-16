@@ -20,6 +20,20 @@ If you want to manually create an environment, the key packages to install are `
 `tensorflow_datasets`, `tensorflow_hub`, `apache_beam`, `matplotlib`, `plotly` and `wandb`.
 
 
+## Quick Start - Build Scripts
+
+For convenience, we provide shell scripts to build datasets:
+
+**Build a single dataset:**
+```bash
+bash rlds_dataset_builder/build_dataset.sh assembly_line_sorting
+```
+
+**Build all datasets at once:**
+```bash
+bash rlds_dataset_builder/build_all_datasets.sh
+```
+
 ## Run Example RLDS Dataset Creation
 
 Before modifying the code to convert your own dataset, run the provided example dataset creation script to ensure

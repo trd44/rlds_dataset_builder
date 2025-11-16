@@ -7,7 +7,7 @@ import tensorflow_datasets as tfds
 import tensorflow_hub as hub
 
 
-class AssemblyLineSorting(tfds.core.GeneratorBasedBuilder):
+class CubeSorting(tfds.core.GeneratorBasedBuilder):
     """DatasetBuilder for Assembly Line Sorting dataset."""
 
     VERSION = tfds.core.Version('1.0.0')

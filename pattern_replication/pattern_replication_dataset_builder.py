@@ -7,8 +7,8 @@ import tensorflow_datasets as tfds
 import tensorflow_hub as hub
 
 
-class AssemblyLineSorting(tfds.core.GeneratorBasedBuilder):
-    """DatasetBuilder for Assembly Line Sorting dataset."""
+class PatternReplication(tfds.core.GeneratorBasedBuilder):
+    """DatasetBuilder for Pattern Replication dataset."""
 
     VERSION = tfds.core.Version('1.0.0')
     RELEASE_NOTES = {
