@@ -42,11 +42,6 @@ class Hanoi50(tfds.core.GeneratorBasedBuilder):
                             dtype=np.float32,
                             doc='Robot Proprio state (7D Joint angles, 1D gripper).',
                         ),
-                        'joint_state': tfds.features.Tensor(
-                            shape=(8,),
-                            dtype=np.float32,
-                            doc='Robot Joint state (7D Joint angles, 1D gripper).',
-                        ),
                     }),
                     'action': tfds.features.Tensor(
                         shape=(7,),
@@ -135,7 +130,6 @@ class Hanoi50(tfds.core.GeneratorBasedBuilder):
                         'image': step['observation']['image'],
                         'wrist_image': step['observation']['wrist_image'],
                         'state': step['observation']['state'],
-                        'joint_state': step['observation']['joint_state'],
                     },
                     'action': step['action'],
                     'discount': 1.0,
